@@ -10,10 +10,6 @@ namespace ApiLibros.Models
     public partial class BookStoreContext : IdentityDbContext<ApplicationUser>
     {
 
-        //public BookStoreContext()
-        //{
-        //}
-
         public BookStoreContext(DbContextOptions<BookStoreContext> options)
             : base(options)
         {
@@ -28,6 +24,8 @@ namespace ApiLibros.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.HasAnnotation("Relational:Collation", "Modern_Spanish_CI_AS");
 
             modelBuilder.Entity<Editorial>(entity =>
