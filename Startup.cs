@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ApiLibros.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace ApiLibros
 {
@@ -29,6 +30,18 @@ namespace ApiLibros
         {
             services.AddDbContext<BookStoreContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ApplicationDbContext")));
 
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                  .AddEntityFrameworkStores<BookStoreContext>()
+                .AddDefaultTokenProviders();
+
+            /*
+                      //services.AddIdentity<Usuario, IdentityRole>()
+            //    .AddUserStore<ApplicationDbContext>()
+            //    .AddDefaultTokenProviders();
+               .AddEntityFrameworkStores<BookStoreContext>()
+           // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+           // .AddJwtBearer();
+            */
             services.AddControllers();
         }
 
