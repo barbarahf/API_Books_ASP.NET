@@ -1,5 +1,4 @@
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\ApiLibros.exe
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\ApiLibros.deps.json
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\ApiLibros.runtimeconfig.json
@@ -40,9 +39,6 @@ C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\System.Runtime.
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\System.Text.Json.dll
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
@@ -70,16 +66,12 @@ C:\Users\bherrerf\source\repos\ApiLibros\obj\Debug\netcoreapp3.1\ApiLibros.cspro
 C:\Users\bherrerf\source\repos\ApiLibros\obj\Debug\netcoreapp3.1\ApiLibros.dll
 C:\Users\bherrerf\source\repos\ApiLibros\obj\Debug\netcoreapp3.1\ApiLibros.pdb
 C:\Users\bherrerf\source\repos\ApiLibros\obj\Debug\netcoreapp3.1\ApiLibros.genruntimeconfig.cache
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\EntityFramework.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\System.CodeDom.dll
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -91,6 +83,10 @@ C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win-x6
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\bherrerf\source\repos\ApiLibros\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
