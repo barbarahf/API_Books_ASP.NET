@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ApiLibros.Migrations
 {
-    public partial class Initial_Migration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -26,9 +26,6 @@ namespace ApiLibros.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    userId = table.Column<int>(type: "int", nullable: false),
-                    userName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -49,31 +46,31 @@ namespace ApiLibros.Migrations
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "editorial",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    nombre_editorial = table.Column<string>(type: "char(60)", unicode: false, fixedLength: true, maxLength: 60, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_editorial", x => x.id);
-                });
+            //migrationBuilder.CreateTable(
+            //    name: "editorial",
+            //    columns: table => new
+            //    {
+            //        id = table.Column<int>(type: "int", nullable: false)
+            //            .Annotation("SqlServer:Identity", "1, 1"),
+            //        nombre_editorial = table.Column<string>(type: "char(60)", unicode: false, fixedLength: true, maxLength: 60, nullable: false)
+            //    },
+            //    constraints: table =>
+            //    {
+            //        table.PrimaryKey("PK_editorial", x => x.id);
+            //    });
 
-            migrationBuilder.CreateTable(
-                name: "genero",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    genero = table.Column<string>(type: "char(50)", unicode: false, fixedLength: true, maxLength: 50, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_genero", x => x.id);
-                });
+            //migrationBuilder.CreateTable(
+            //    name: "genero",
+            //    columns: table => new
+            //    {
+            //        id = table.Column<int>(type: "int", nullable: false)
+            //            .Annotation("SqlServer:Identity", "1, 1"),
+            //        genero = table.Column<string>(type: "char(50)", unicode: false, fixedLength: true, maxLength: 50, nullable: false)
+            //    },
+            //    constraints: table =>
+            //    {
+            //        table.PrimaryKey("PK_genero", x => x.id);
+            //    });
 
             migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
@@ -181,36 +178,36 @@ namespace ApiLibros.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "libro",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    titulo = table.Column<string>(type: "char(50)", unicode: false, fixedLength: true, maxLength: 50, nullable: false),
-                    autor = table.Column<string>(type: "char(50)", unicode: false, fixedLength: true, maxLength: 50, nullable: false),
-                    fecha_publicacion = table.Column<DateTime>(type: "date", nullable: false),
-                    precio = table.Column<double>(type: "float", nullable: false),
-                    id_genero = table.Column<int>(type: "int", nullable: false),
-                    id_editorial = table.Column<int>(type: "int", nullable: false),
-                    img = table.Column<string>(type: "char(50)", unicode: false, fixedLength: true, maxLength: 50, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_libro", x => x.id);
-                    table.ForeignKey(
-                        name: "FK__libro__id_editor__29572725",
-                        column: x => x.id_editorial,
-                        principalTable: "editorial",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK__libro__id_genero__2A4B4B5E",
-                        column: x => x.id_genero,
-                        principalTable: "genero",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                });
+            //migrationBuilder.CreateTable(
+            //    name: "libro",
+            //    columns: table => new
+            //    {
+            //        id = table.Column<int>(type: "int", nullable: false)
+            //            .Annotation("SqlServer:Identity", "1, 1"),
+            //        titulo = table.Column<string>(type: "char(50)", unicode: false, fixedLength: true, maxLength: 50, nullable: false),
+            //        autor = table.Column<string>(type: "char(50)", unicode: false, fixedLength: true, maxLength: 50, nullable: false),
+            //        fecha_publicacion = table.Column<DateTime>(type: "date", nullable: false),
+            //        precio = table.Column<double>(type: "float", nullable: false),
+            //        id_genero = table.Column<int>(type: "int", nullable: false),
+            //        id_editorial = table.Column<int>(type: "int", nullable: false),
+            //        img = table.Column<string>(type: "char(50)", unicode: false, fixedLength: true, maxLength: 50, nullable: false)
+            //    },
+            //    constraints: table =>
+            //    {
+            //        table.PrimaryKey("PK_libro", x => x.id);
+            //        table.ForeignKey(
+            //            name: "FK__libro__id_editor__29572725",
+            //            column: x => x.id_editorial,
+            //            principalTable: "editorial",
+            //            principalColumn: "id",
+            //            onDelete: ReferentialAction.Restrict);
+            //        table.ForeignKey(
+            //            name: "FK__libro__id_genero__2A4B4B5E",
+            //            column: x => x.id_genero,
+            //            principalTable: "genero",
+            //            principalColumn: "id",
+            //            onDelete: ReferentialAction.Restrict);
+            //    });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -250,23 +247,24 @@ namespace ApiLibros.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_libro_id_editorial",
-                table: "libro",
-                column: "id_editorial");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_libro_id_genero",
-                table: "libro",
-                column: "id_genero");
-
-            migrationBuilder.CreateIndex(
-                name: "UQ__libro__38FA640FE7AA7AE5",
-                table: "libro",
-                column: "titulo",
-                unique: true);
         }
+
+        //    migrationBuilder.CreateIndex(
+        //        name: "IX_libro_id_editorial",
+        //        table: "libro",
+        //        column: "id_editorial");
+
+        //    migrationBuilder.CreateIndex(
+        //        name: "IX_libro_id_genero",
+        //        table: "libro",
+        //        column: "id_genero");
+
+        //    migrationBuilder.CreateIndex(
+        //        name: "UQ__libro__38FA640FE7AA7AE5",
+        //        table: "libro",
+        //        column: "titulo",
+        //        unique: true);
+        //}
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
@@ -285,8 +283,8 @@ namespace ApiLibros.Migrations
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
 
-            migrationBuilder.DropTable(
-                name: "libro");
+            //migrationBuilder.DropTable(
+            //    name: "libro");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -294,11 +292,11 @@ namespace ApiLibros.Migrations
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
-            migrationBuilder.DropTable(
-                name: "editorial");
+            //migrationBuilder.DropTable(
+            //    name: "editorial");
 
-            migrationBuilder.DropTable(
-                name: "genero");
+            //migrationBuilder.DropTable(
+            //    name: "genero");
         }
     }
 }

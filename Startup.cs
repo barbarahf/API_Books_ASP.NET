@@ -14,6 +14,14 @@ using System.Threading.Tasks;
 using ApiLibros.Models;
 using Microsoft.AspNetCore.Identity;
 
+using Microsoft.Extensions.Options;
+
+
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+ 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 namespace ApiLibros
 {
     public class Startup
@@ -28,22 +36,39 @@ namespace ApiLibros
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<BookStoreContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ApplicationDbContext")));
+            //Entity frame conect to database by string (json)
+            services.AddDbContext<BookStoreDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ApplicationDbContext")));
 
+            //Identity
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                  .AddEntityFrameworkStores<BookStoreContext>()
+                  .AddEntityFrameworkStores<BookStoreDbContext>()
                 .AddDefaultTokenProviders();
 
-            /*
-                      //services.AddIdentity<Usuario, IdentityRole>()
-            //    .AddUserStore<ApplicationDbContext>()
-            //    .AddDefaultTokenProviders();
-               .AddEntityFrameworkStores<BookStoreContext>()
-           // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-           // .AddJwtBearer();
-            */
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+             {
+                 options.SaveToken = true;
+                 options.RequireHttpsMetadata = false;
+                 options.TokenValidationParameters = new TokenValidationParameters()
+                 {
+                     ValidateIssuer = true,
+                     ValidateAudience = true,
+                     ValidAudience = Configuration["JWT:ValidAudience"],
+                     ValidIssuer = Configuration["JWT:ValidIssuer"],
+                     //  IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Secret"]))
+                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value))
+                 };
+             });
+
+
+
             services.AddControllers();
         }
+ 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -53,10 +78,11 @@ namespace ApiLibros
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

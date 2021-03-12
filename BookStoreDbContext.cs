@@ -4,13 +4,12 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using ApiLibros.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-
 namespace ApiLibros.Models
 {
-    public partial class BookStoreContext : IdentityDbContext<ApplicationUser>
+    public partial class BookStoreDbContext : IdentityDbContext<ApplicationUser>
     {
 
-        public BookStoreContext(DbContextOptions<BookStoreContext> options)
+        public BookStoreDbContext(DbContextOptions<BookStoreDbContext> options)
             : base(options)
         {
 
@@ -24,7 +23,7 @@ namespace ApiLibros.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(modelBuilder); 
 
             modelBuilder.HasAnnotation("Relational:Collation", "Modern_Spanish_CI_AS");
 
