@@ -19,7 +19,7 @@ using Microsoft.Extensions.Options;
 
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
- 
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace ApiLibros
@@ -33,13 +33,13 @@ namespace ApiLibros
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+
         public void ConfigureServices(IServiceCollection services)
         {
-            //Entity frame conect to database by string (json)
+
             services.AddDbContext<BookStoreDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ApplicationDbContext")));
 
-            //Identity
+
             services.AddIdentity<ApplicationUser, IdentityRole>()
                   .AddEntityFrameworkStores<BookStoreDbContext>()
                 .AddDefaultTokenProviders();
@@ -60,7 +60,7 @@ namespace ApiLibros
                      ValidAudience = Configuration["JWT:ValidAudience"],
                      ValidIssuer = Configuration["JWT:ValidIssuer"],
                      IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Secret"]))
-                    // IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration.GetSection("AppSettings:Token").Value))
+
                  };
              });
 
@@ -68,17 +68,15 @@ namespace ApiLibros
 
             services.AddControllers();
         }
- 
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

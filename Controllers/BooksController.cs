@@ -6,13 +6,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using ApiLibros.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace ApiLibros.Controllers
 {
-
-    //[ApiController]
-    //[Route("[controller]")]
-   // [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Produces("application/json")]
     [Route("/libros")]
