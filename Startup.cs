@@ -21,6 +21,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ApiLibros
 {
@@ -36,10 +37,11 @@ namespace ApiLibros
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
 
             services.AddDbContext<BookStoreDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ApplicationDbContext")));
 
-
+            // For Identity  
             services.AddIdentity<ApplicationUser, IdentityRole>()
                   .AddEntityFrameworkStores<BookStoreDbContext>()
                 .AddDefaultTokenProviders();
@@ -59,14 +61,12 @@ namespace ApiLibros
                      ValidateAudience = true,
                      ValidAudience = Configuration["JWT:ValidAudience"],
                      ValidIssuer = Configuration["JWT:ValidIssuer"],
+
                      IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Secret"]))
 
                  };
              });
 
-
-
-            services.AddControllers();
         }
 
 
