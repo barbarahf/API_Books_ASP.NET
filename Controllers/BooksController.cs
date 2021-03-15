@@ -12,7 +12,7 @@ namespace ApiLibros.Controllers
 
     //[ApiController]
     //[Route("[controller]")]
-   [Authorize]
+   // [Authorize]
     [ApiController]
     [Produces("application/json")]
     [Route("/libros")]
