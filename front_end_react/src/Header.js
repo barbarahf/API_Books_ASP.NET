@@ -14,17 +14,17 @@ function Header() {
                         <div className="search-button">
                             <div className="container">
                               <span className="lupa">
-                                <i className="fa fa-search"></i>
+                                <i className="fa fa-search"/>
                               </span>
                                 <input type="search" id="search" placeholder="¿Qué quieres buscar?"/>
                             </div>
                         </div>
                         <ul className="icons">
-                            <li><a href="/cliente"><i className="far fa-user"></i> </a></li>
-                            <li><i className="fas fa-calendar-alt"></i>
+                            <li><a href="/client"><i className="far fa-user"/> </a></li>
+                            <li><i className="fas fa-calendar-alt"/>
                             </li>
-                            <li><i className="fas fa-globe-americas"></i></li>
-                            <li><i className="fas fa-bars"></i></li>
+                            <li><i className="fas fa-globe-americas"/></li>
+                            <li><i className="fas fa-bars"/></li>
                         </ul>
                     </div>
                 </nav>
@@ -33,6 +33,7 @@ function Header() {
                     <h2>Find your favorite books</h2>
                 </hgroup>
             </header>
+
         </div>
     )
         ;
