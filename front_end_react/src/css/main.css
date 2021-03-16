@@ -1,0 +1,167 @@
+/*Header Styles*/
+* {
+    max-width: 100%;
+}
+
+header * {
+    font-family: 'Playfair Display', serif;
+}
+
+.App-logo {
+    max-height: 80px;
+    background-color: white;
+    align-self: center;
+}
+
+.App-header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.App-header-nav .icons, .App-header-nav .icons a {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    /*    background: rgba(255, 255, 255, 0.4);*/
+    color: white;
+    max-width: 100%;
+}
+
+.App-header-nav .icons li {
+    min-width: 40px;
+    font-size: 19px;
+}
+
+.App-header-nav .order-blocks {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*Header image*/
+header {
+    background-image: url("../img/books_wallpaper.jpg");
+    height: 620px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 100%;
+    animation: zoom 35s infinite;
+    -webkit-animation: zoom 35s infinite;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5); /*Layer*/
+}
+
+/*Header flex box*/
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header hgroup {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+header hgroup h1 {
+    font-size: 65px;
+}
+
+header hgroup > * {
+    margin: 0;
+}
+
+@keyframes zoom {
+    0% {
+        background-size: 100%;
+
+    }
+    50% {
+        background-size: 120%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/*Titulos*/
+.App header hgroup {
+    color: white;
+}
+
+/*Boton de busqueda*/
+
+.search-button {
+    height: 50px;
+}
+
+.container {
+    position: relative;
+}
+
+.container .lupa {
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 27px;
+    color: #FFF;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+
+}
+
+#search {
+    width: 70px;
+    height: 45px;
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+    font-size: 0.9em;
+    float: left;
+    padding-left: 70px;
+    -webkit-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+    margin: 15px 0;
+}
+
+/*eventos*/
+#search:focus,
+#search:active {
+    outline: none;
+    width: 400px;
+    padding-right: 20px;
+}
+
+.container:hover #search {
+    width: 400px;
+    background-color: transparent;
+    max-width: 500px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: none;
+    color: white;
+
+}
+
+/*placeholder*/
+::-webkit-input-placeholder {
+    color: #CCC;
+}
+
+:-moz-placeholder {
+    color: #CCC;
+}
+
+::-moz-placeholder {
+    color: #CCC;
+}
+
+:-ms-input-placeholder {
+    color: #CCC;
+}
