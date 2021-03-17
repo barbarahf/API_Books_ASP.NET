@@ -1,6 +1,8 @@
 import logo from './img/logo_book_store.png';
 import './css/main.css';
+
 import React from "react";
+
 
 function Header() {
     return (
@@ -33,6 +35,7 @@ function Header() {
                     <h2>Find your favorite books</h2>
                 </hgroup>
             </header>
+
 
         </div>
     )

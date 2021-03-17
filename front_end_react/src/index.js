@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; //To render
 import './css/index.css';
-import './login';
-//SPA route
-//import {BrowserRouter, Route, Switch} from 'react-router-dom'
+
 
 import reportWebVitals from './reportWebVitals';
 import Header from './Header';
-import Client from './clients';
-//import { Link } from 'react-router'; //Para añadir rutas
+import Login from "./Login";
+/*import Login from './Login';*/
+
 import {BrowserRouter as Router, Route} from "react-router-dom";
+
 
 ReactDOM.render(
     <Router>
@@ -17,8 +17,9 @@ ReactDOM.render(
             <Route exact path="/">
                 <Header/>
             </Route>
-            <Route exact path="/client">
-                <Client/>
+
+            <Route exact path="/users/login">
+                <Login/>
             </Route>
         </div>
     </Router>,
