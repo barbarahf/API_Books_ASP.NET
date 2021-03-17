@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fB8+lpyrEGgH1y/B6kQOjyQqGYBnPPmzUIzCKwGF3fhr40NhlBfr5AilUYNTKau2w7Ais1X99OdMKFMP8lEi4Q==",
+  "dgSpecHash": "/ew+sXeFFkHOms6n6QcMxpHVeqz6btOPft2kmsShjZBNi8vx/rbQyvulKeg468ipcx2iYqguWrmPTjojMAOqCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bherrerf\\source\\repos\\ApiLibros\\ApiLibros.csproj",
+  "projectFilePath": "C:\\Users\\bherrerf\\source\\repos\\ApiLibros\\backend_api_rest\\ApiLibros.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bherrerf\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\bherrerf\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
