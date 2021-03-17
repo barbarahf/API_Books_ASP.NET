@@ -126,4 +126,4 @@ Linkedin or Gmail - [@barbara-herrera-developer](https://www.linkedin.com/in/bar
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: https://github.com/barbarahf/Books_ApiRest_ASP.NET_REACT/blob/main/front_end_react/public/logo_book_store.png
+[product-screenshot]: https://github.com/barbarahf/Books_ApiRest_ASP.NET_REACT/blob/main/front_end_react/public/preview.PNG
