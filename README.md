@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="public/logo_book_store.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/barbarahf/Books_ApiRest_ASP.NET_REACT/blob/main/front_end_react/public/logo_book_store.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Web application of books, with react</h3>
@@ -127,3 +127,4 @@ Linkedin or Gmail - [@barbara-herrera-developer](https://www.linkedin.com/in/bar
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: https://github.com/barbarahf/Books_ApiRest_ASP.NET_REACT/blob/main/front_end_react/public/preview.PNG
+[product-logo]:https://github.com/barbarahf/Books_ApiRest_ASP.NET_REACT/blob/main/front_end_react/public/logo_book_store.png
