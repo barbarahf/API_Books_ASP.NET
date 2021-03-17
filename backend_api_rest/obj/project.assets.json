@@ -6698,11 +6698,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bherrerf\\source\\repos\\ApiLibros\\ApiLibros.csproj",
+      "projectUniqueName": "C:\\Users\\bherrerf\\source\\repos\\ApiLibros\\backend_api_rest\\ApiLibros.csproj",
       "projectName": "ApiLibros",
-      "projectPath": "C:\\Users\\bherrerf\\source\\repos\\ApiLibros\\ApiLibros.csproj",
+      "projectPath": "C:\\Users\\bherrerf\\source\\repos\\ApiLibros\\backend_api_rest\\ApiLibros.csproj",
       "packagesPath": "C:\\Users\\bherrerf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bherrerf\\source\\repos\\ApiLibros\\obj\\",
+      "outputPath": "C:\\Users\\bherrerf\\source\\repos\\ApiLibros\\backend_api_rest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bherrerf\\AppData\\Roaming\\NuGet\\NuGet.Config",
