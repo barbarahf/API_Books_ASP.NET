@@ -5,7 +5,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
@@ -23,7 +22,7 @@
     <a href="#">View Demo</a>
     ·
     <a href="https://github.com/barbarahf/API_Books_ASP.NET/issues">Report Bug</a>
- 
+
   </p>
  
 
@@ -59,7 +58,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/barbarahf/Books_ApiRest_ASP.NET_REACT/blob/main/front_end_react/public/preview.PNG)
+[![Font-end page][product-screenshot]](https://github.com/barbarahf/Books_ApiRest_ASP.NET_REACT/blob/main/front_end_react/public/preview.PNG)
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
@@ -108,14 +107,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Barbara Herrera](https://www.linkedin.com/in/barbara-herrera-developer/) - herrerabarbaraf@gmail.com
+Linkedin or Gmail - [@barbara-herrera-developer](https://www.linkedin.com/in/barbara-herrera-developer/) - herrerabarbaraf@gmail.com
 
  
-
-
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -132,4 +126,4 @@ Your Name - [@Barbara Herrera](https://www.linkedin.com/in/barbara-herrera-devel
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: public/preview.PNG
+[product-screenshot]: https://github.com/barbarahf/Books_ApiRest_ASP.NET_REACT/blob/main/front_end_react/public/logo_book_store.png
